@@ -2,39 +2,44 @@ import Reveal from "@/components/Reveal";
 
 const STEPS = [
   {
-    step: "STEP 01",
+    n: "01",
     title: "Discovery & Research",
-    desc: "Validate core operational bottlenecks or target user requirements before initiating visual UI layout or engineering work.",
+    desc: "Validate operational bottlenecks or user requirements before any visual or engineering work begins.",
   },
   {
-    step: "STEP 02",
+    n: "02",
     title: "System Architecture",
-    desc: "Design structured data flows, business communication channels, and PRD specifications to align team execution.",
+    desc: "Design data flows, communication channels, and PRDs that align the whole team's execution.",
   },
   {
-    step: "STEP 03",
+    n: "03",
     title: "Visual Precision",
-    desc: "Craft clean, minimal, and premium digital assets using Framer, Webflow, and Figma that position brands effectively.",
+    desc: "Craft clean, minimal, premium assets in Framer, Webflow, and Figma that position brands effectively.",
   },
   {
-    step: "STEP 04",
+    n: "04",
     title: "AI System Integration",
-    desc: "Implement practical automation pipelines (e.g. Make, Studio OS) to streamline client onboarding, invoicing, and admin workflows.",
+    desc: "Ship practical automation pipelines (Make, Studio OS) across onboarding, invoicing, and admin.",
   },
 ];
 
 export default function Framework() {
   return (
-    <Reveal as="section" id="framework" className="section-padding">
-      <div className="section-header">
-        <h2 className="section-title">Product &amp; Systems Logic</h2>
-        <span className="section-num">03 / FRAMEWORK</span>
+    <Reveal as="section" id="framework" className="section">
+      <div className="section-head">
+        <div>
+          <div className="eyebrow" style={{ marginBottom: "1.2rem" }}>
+            Product & Systems Logic
+          </div>
+          <h2 className="section-title">How the work is grown.</h2>
+        </div>
+        <span className="idx">03 / FRAMEWORK</span>
       </div>
 
-      <div className="framework-list">
+      <div className="fw-list">
         {STEPS.map((s) => (
-          <div className="framework-item" key={s.step}>
-            <span className="fw-step">{s.step}</span>
+          <div className="fw-row" key={s.n}>
+            <span className="fw-step">{s.n}</span>
             <span className="fw-title">{s.title}</span>
             <span className="fw-desc">{s.desc}</span>
           </div>

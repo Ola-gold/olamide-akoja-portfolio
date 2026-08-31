@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import Magnetic from "@/components/Magnetic";
 
 const SOCIALS = [
   { href: "https://www.linkedin.com/in/olamideakoja/", label: "LinkedIn" },
@@ -8,19 +9,23 @@ const SOCIALS = [
 
 export default function Contact() {
   return (
-    <Reveal as="section" id="contact" className="footer-cta">
-      <span className="section-num">05 / GET IN TOUCH</span>
-      <h2>Let&apos;s build something structured.</h2>
-      <p style={{ marginBottom: "2rem", color: "var(--text-muted)" }}>
+    <Reveal as="section" id="contact" className="contact">
+      <div className="eyebrow" style={{ justifyContent: "center", marginBottom: "2rem" }}>
+        05 / GET IN TOUCH
+      </div>
+      <h2>
+        Let&apos;s build something <em>structured.</em>
+      </h2>
+      <p style={{ color: "var(--muted)", maxWidth: "44ch", margin: "0 auto 2.5rem" }}>
         Available for Product Management, UX Research, and Parallel Lab
         collaborations.
       </p>
 
-      <a href="mailto:hello@olamideakoja.com" className="email-link">
+      <Magnetic href="mailto:hello@olamideakoja.com" className="email" strength={0.2}>
         hello@olamideakoja.com
-      </a>
+      </Magnetic>
 
-      <div className="social-bar">
+      <div className="socials">
         {SOCIALS.map((s) => (
           <a
             key={s.href}
@@ -33,8 +38,8 @@ export default function Contact() {
         ))}
       </div>
 
-      <div className="copyright">
-        &copy; 2026 Olamide Akoja. Based in Lagos, Nigeria.
+      <div className="colophon">
+        © 2026 Olamide Akoja — Lagos, Nigeria
       </div>
     </Reveal>
   );

@@ -2,45 +2,38 @@
 
 import { useEffect, useRef, useState } from "react";
 
-type RevealProps = {
-  children: React.ReactNode;
-  as?: keyof JSX.IntrinsicElements;
-  className?: string;
-  id?: string;
-};
-
 export default function Reveal({
   children,
   as: Tag = "div",
   className = "",
   id,
-}: RevealProps) {
+}: {
+  children: React.ReactNode;
+  as?: keyof JSX.IntrinsicElements;
+  className?: string;
+  id?: string;
+}) {
   const ref = useRef<HTMLElement | null>(null);
   const [active, setActive] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       setActive(true);
       return;
     }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(true);
-            observer.unobserve(entry.target);
-          }
-        });
+    const ob = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setActive(true);
+          ob.disconnect();
+        }
       },
-      { threshold: 0.1 }
+      { threshold: 0.15 }
     );
-
-    observer.observe(el);
-    return () => observer.disconnect();
+    ob.observe(el);
+    return () => ob.disconnect();
   }, []);
 
   const Component = Tag as React.ElementType;

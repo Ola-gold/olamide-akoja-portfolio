@@ -1,15 +1,18 @@
 import Reveal from "@/components/Reveal";
 
-const EXPERIENCE = [
+const TIMELINE = [
   {
-    role: "Co-Founder & Head of Business Development / PM",
-    company: "Parallel Lab • Present",
+    year: "NOW",
+    role: "Co-Founder & Head of BizDev / PM",
+    company: "Parallel Lab",
   },
   {
+    year: "2023—",
     role: "UX Researcher & Product Specialist",
-    company: "Independent • 2023 - Present",
+    company: "Independent",
   },
   {
+    year: "—22",
     role: "Product & Web Designer",
     company: "Foundation Era",
   },
@@ -17,32 +20,39 @@ const EXPERIENCE = [
 
 export default function About() {
   return (
-    <Reveal as="section" id="about" className="section-padding">
-      <div className="section-header">
-        <h2 className="section-title">Background &amp; Evolution</h2>
-        <span className="section-num">02 / ABOUT</span>
+    <Reveal as="section" id="about" className="section">
+      <div className="section-head">
+        <div>
+          <div className="eyebrow" style={{ marginBottom: "1.2rem" }}>
+            Background
+          </div>
+          <h2 className="section-title">A structured, organic logic.</h2>
+        </div>
+        <span className="idx">02 / ABOUT</span>
       </div>
 
-      <div className="about-grid">
-        <div className="about-bio">
+      <div className="about">
+        <div className="about__bio">
           <p>
-            I transitioned from Product Design into Product Management and AI
-            Systems Building. Having studied Plant Biology at the University of
-            Ilorin, I approach digital systems with an organic, structured logic.
+            I moved from <strong>Product Design</strong> into Product Management
+            and AI Systems Building — approaching digital systems the way a
+            plant biologist reads an ecosystem: patiently, structurally.
           </p>
-          <p>
+          <p className="muted">
             Beyond running <strong>Parallel Lab</strong> with my partners, I
-            build practical AI automation systems using Make and custom
-            workflows, conduct UX research, write relatable career content, and
-            explore documentary photography.
+            build practical AI automation with Make and custom workflows, run UX
+            research, write career content, and shoot documentary photography.
           </p>
         </div>
 
-        <div className="exp-log">
-          {EXPERIENCE.map((item) => (
-            <div className="exp-item" key={item.company}>
-              <div className="exp-role">{item.role}</div>
-              <div className="exp-company">{item.company}</div>
+        <div className="timeline">
+          {TIMELINE.map((t) => (
+            <div className="tl-item" key={t.company}>
+              <span className="tl-year">{t.year}</span>
+              <div>
+                <div className="tl-role">{t.role}</div>
+                <div className="tl-company">{t.company}</div>
+              </div>
             </div>
           ))}
         </div>

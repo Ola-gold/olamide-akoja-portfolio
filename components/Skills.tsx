@@ -26,23 +26,26 @@ const GROUPS = [
 
 export default function Skills() {
   return (
-    <Reveal as="section" id="skills" className="section-padding">
-      <div className="section-header">
-        <h2 className="section-title">Capability Matrix</h2>
-        <span className="section-num">04 / TOOLKIT</span>
+    <Reveal as="section" id="skills" className="section">
+      <div className="section-head">
+        <div>
+          <div className="eyebrow" style={{ marginBottom: "1.2rem" }}>
+            Capability Matrix
+          </div>
+          <h2 className="section-title">The full toolkit.</h2>
+        </div>
+        <span className="idx">04 / TOOLKIT</span>
       </div>
 
-      <div className="skills-wrapper">
-        {GROUPS.map((group) => (
-          <div className="skill-group" key={group.title}>
-            <h4>{group.title}</h4>
-            <div className="skill-pills">
-              {group.skills.map((skill) => (
-                <span className="skill-pill" key={skill}>
-                  {skill}
-                </span>
+      <div className="skills">
+        {GROUPS.map((g) => (
+          <div className="skill-col" key={g.title}>
+            <h4>{g.title}</h4>
+            <ul>
+              {g.skills.map((s) => (
+                <li key={s}>{s}</li>
               ))}
-            </div>
+            </ul>
           </div>
         ))}
       </div>

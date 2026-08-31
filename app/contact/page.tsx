@@ -1,0 +1,130 @@
+import Reveal from "@/components/Reveal";
+import MaskLines from "@/components/MaskLines";
+import Magnetic from "@/components/Magnetic";
+
+export default function ContactPage() {
+  return (
+    <main id="main">
+      <section className="page-hero container">
+        <Reveal as="div" className="eyebrow page-hero__eyebrow">
+          Contact
+        </Reveal>
+        <h1 className="page-hero__title">
+          <MaskLines lines={["Let&apos;s build", <>something structured.</>]} />
+        </h1>
+        <p className="page-lead">
+          Two reasons you might be here — pick the one that fits.
+        </p>
+      </section>
+
+      <Reveal as="section" className="section container">
+        <div className="about__bio">
+          <p>
+            <strong>Hiring manager?</strong> I&apos;m open to product management
+            and UX research roles. Resume and LinkedIn are right here — no
+            gatekeeping.
+          </p>
+          <p className="muted">
+            <strong>Everyone else?</strong> Client, collaborator, or someone who
+            liked the Extras page — email me. I&apos;m specifically glad to hear
+            from you, not just the &ldquo;hire me&rdquo; pitch.
+          </p>
+        </div>
+
+        <div className="skills" style={{ marginTop: "2.5rem" }}>
+          <div className="skill-col">
+            <h4>Email</h4>
+            <Magnetic
+              href="mailto:olamideibukunoluwa5@gmail.com"
+              className="email"
+              strength={0.18}
+            >
+              olamideibukunoluwa5@gmail.com
+            </Magnetic>
+          </div>
+          <div className="skill-col">
+            <h4>LinkedIn</h4>
+            <a
+              href="https://www.linkedin.com/in/olamideakoja/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="email"
+            >
+              /in/olamideakoja
+            </a>
+          </div>
+          <div className="skill-col">
+            <h4>Resume</h4>
+            <a
+              href="https://drive.google.com/file/d/1dUYDI5hTnBki905gM6nHlCYcubDafH2N/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="email"
+            >
+              View CV ↗
+            </a>
+          </div>
+          <div className="skill-col">
+            <h4>Location</h4>
+            <span className="email" style={{ borderBottom: "none" }}>
+              Lagos, Nigeria
+            </span>
+          </div>
+          <div className="skill-col">
+            <h4>Studio</h4>
+            <a
+              href="https://parallellab.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="email"
+            >
+              parallellab.co ↗
+            </a>
+          </div>
+        </div>
+
+        <p className="about__bio" style={{ marginTop: "2rem", maxWidth: "60ch" }}>
+          Currently open to <strong>Product Manager</strong>,{" "}
+          <strong>Associate PM</strong>, <strong>Product Operations</strong>, and{" "}
+          <strong>Project Manager</strong> roles — remote or Lagos-based.
+        </p>
+
+        <div className="social-row">
+          <a
+            href="https://www.instagram.com/olamide_akoja/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram ↗
+          </a>
+          <a
+            href="https://twitter.com/olakoja4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter / X ↗
+          </a>
+          <a
+            href="https://www.behance.net/olamideakoja"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Behance ↗
+          </a>
+        </div>
+      </Reveal>
+
+      <Reveal as="section" className="closer">
+        <h2>
+          The next step is <em>one email</em> away.
+        </h2>
+        <Magnetic
+          href="mailto:olamideibukunoluwa5@gmail.com"
+          className="btn btn--primary"
+        >
+          Say hello ↗
+        </Magnetic>
+      </Reveal>
+    </main>
+  );
+}
