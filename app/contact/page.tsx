@@ -5,7 +5,7 @@ import Magnetic from "@/components/Magnetic";
 export default function ContactPage() {
   return (
     <main id="main">
-      <section className="page-hero container">
+      <section className="page-hero container page-hero--center">
         <Reveal as="div" className="eyebrow page-hero__eyebrow">
           Contact
         </Reveal>
@@ -18,7 +18,7 @@ export default function ContactPage() {
       </section>
 
       <Reveal as="section" className="section container">
-        <div className="about__bio">
+        <div className="about__bio" style={{ textAlign: "center", maxWidth: "40rem", margin: "0 auto" }}>
           <p>
             <strong>Hiring manager?</strong> I&apos;m open to product management
             and UX research roles. Resume and LinkedIn are right here — no
@@ -31,7 +31,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="skills" style={{ marginTop: "2.5rem" }}>
+        <div className="skills skills--center" style={{ marginTop: "var(--space-8)" }}>
           <div className="skill-col">
             <h4>Email</h4>
             <Magnetic
@@ -83,13 +83,13 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <p className="about__bio" style={{ marginTop: "2rem", maxWidth: "60ch" }}>
+        <p className="about__bio" style={{ marginTop: "var(--space-7)", maxWidth: "60ch", textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
           Currently open to <strong>Product Manager</strong>,{" "}
           <strong>Associate PM</strong>, <strong>Product Operations</strong>, and{" "}
           <strong>Project Manager</strong> roles — remote or Lagos-based.
         </p>
 
-        <div className="social-row">
+        <div className="social-row social-row--center">
           <a
             href="https://www.instagram.com/olamide_akoja/"
             target="_blank"

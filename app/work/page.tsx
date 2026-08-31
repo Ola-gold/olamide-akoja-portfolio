@@ -24,11 +24,11 @@ export default function WorkPage() {
           Work
         </Reveal>
         <h1 className="page-hero__title">
-          <MaskLines lines={["Proof, not a", <>portfolio of adjectives.</>]} />
+          <MaskLines lines={["Selected work"]} />
         </h1>
         <p className="page-lead">
-          Four projects that actually show how I think. Open any card for the
-          full case study.
+          A selection of products, businesses and problems I&apos;ve worked on.
+          Studio OS first — it says the most about where I&apos;m going.
         </p>
       </section>
 
@@ -66,7 +66,7 @@ export default function WorkPage() {
         <Reveal as="section" className="case">
           <div className="case__head">
             <h2 className="case__title">Also worth a mention</h2>
-            <span className="case__role">Lighter hits</span>
+            <span className="case__role">Archive</span>
           </div>
           <div className="logo-wall">
             {LOGOS.map((l) => (
@@ -74,9 +74,10 @@ export default function WorkPage() {
             ))}
           </div>
           <p className="about__bio" style={{ marginTop: "2rem", maxWidth: "60ch" }}>
-            And Parallel Lab itself — a creative studio for founders and small
-            business owners doing $5K–100K/month who need their brand to
-            actually look and sound like them.
+            <strong>Vogue Vista (archive)</strong> — pure visual-design case
+            study, held back intentionally. The five above tell a stronger
+            story about evolution beyond design. Plus lighter hits and Framer
+            templates from earlier practice.
           </p>
         </Reveal>
       </div>

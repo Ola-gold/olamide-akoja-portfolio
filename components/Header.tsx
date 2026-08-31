@@ -1,11 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
-  { href: "/about", label: "About" },
   { href: "/work", label: "Work" },
-  { href: "/extras", label: "Extras" },
+  { href: "/about", label: "About" },
+  { href: "/notes", label: "Notes" },
+  { href: "/fieldwork", label: "Fieldwork" },
+  { href: "/lab", label: "Lab" },
+  { href: "/now", label: "Now" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -15,9 +19,9 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-inner">
-        <a href="#" className="brand" aria-label="Olamide Akoja home">
+        <a href="/" className="brand" aria-label="Olamide Akoja home">
           <span className="dot" aria-hidden="true" />
-          OLAMIDE AKOJA
+          OLAMIDE
         </a>
 
         <button
@@ -40,6 +44,12 @@ export default function Header() {
             ))}
           </ul>
         </nav>
+        <div className="header-actions">
+          <ThemeToggle />
+          <a href="/contact" className="header-cta">
+            Contact
+          </a>
+        </div>
       </div>
     </header>
   );
