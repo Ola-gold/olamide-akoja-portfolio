@@ -13,8 +13,8 @@ export default function NotesPage() {
           <MaskLines lines={["Things worth", <>saying.</>]} />
         </h1>
         <p className="page-lead">
-          Essays, short observations, and things I&apos;ve learned while
-          building. Not a content factory — a record of what&apos;s actually
+          Essays, short observations, and things I’ve learned while
+          building. Not a content factory — a record of what’s actually
           interesting.
         </p>
       </section>
@@ -26,7 +26,7 @@ export default function NotesPage() {
           </div>
           <h2>Notes are coming</h2>
           <p>
-            I&apos;m gathering 10–15 ideas first — product, career, design,
+            I’m gathering 10–15 ideas first — product, career, design,
             research, building, life. No SEO sludge, just things worth saying.
             Check back soon, or follow along on the homepage.
           </p>
@@ -47,11 +47,11 @@ export default function NotesPage() {
             </div>
             <div className="note-type">
               <h4>Notes</h4>
-              <p>Short observations. E.g. “I don&apos;t think every problem needs more design.”</p>
+              <p>Short observations. E.g. “I don’t think every problem needs more design.”</p>
             </div>
             <div className="note-type">
               <h4>Learning</h4>
-              <p>Things discovered while building. E.g. “What I&apos;m learning from building with AI.”</p>
+              <p>Things discovered while building. E.g. “What I’m learning from building with AI.”</p>
             </div>
           </div>
         </Reveal>

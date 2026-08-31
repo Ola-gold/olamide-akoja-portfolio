@@ -7,8 +7,8 @@
   --line-strong: rgba(242, 244, 238, 0.18);
 
   --bone: #f2f4ee;
-  --muted: #9aa097;
-  --dim: #6e746c;
+  --muted: #c2c8c5;
+  --dim: #9aa09c;
 
   --accent: #c9902f;
   --accent-soft: rgba(201, 144, 47, 0.14);
@@ -277,7 +277,7 @@ button:focus-visible {
   font-family: var(--display);
   font-weight: 600;
   font-size: clamp(2rem, 4.5vw, 3.4rem);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   line-height: 1.02;
   max-width: 16ch;
 }
@@ -353,7 +353,7 @@ button:focus-visible {
   font-weight: 600;
   font-size: clamp(3rem, 11vw, 11rem);
   line-height: 0.92;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
   margin-bottom: 2.5rem;
 }
 .hero__title em {
@@ -614,11 +614,14 @@ button:focus-visible {
 .skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
+  gap: var(--space-6);
 }
 .skill-col {
   border-top: 1px solid var(--accent);
-  padding-top: 1.2rem;
+  padding-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
 .skill-col h4 {
   font-family: var(--mono);
@@ -626,7 +629,7 @@ button:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--bone);
-  margin-bottom: 1.2rem;
+  margin-bottom: 0;
 }
 .skill-col ul {
   list-style: none;
@@ -659,7 +662,7 @@ button:focus-visible {
   font-family: var(--display);
   font-weight: 600;
   font-size: clamp(2.5rem, 8vw, 7rem);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
   line-height: 0.95;
   margin-bottom: 2rem;
 }
@@ -717,7 +720,7 @@ button:focus-visible {
   font-weight: 600;
   font-size: clamp(2.4rem, 7vw, 6rem);
   line-height: 0.98;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   max-width: 20ch;
 }
 .page-hero__title em {
@@ -857,7 +860,7 @@ button:focus-visible {
   font-family: var(--display);
   font-weight: 600;
   font-size: clamp(1.8rem, 4vw, 3rem);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .case__role {
   font-family: var(--mono);
@@ -909,7 +912,7 @@ button:focus-visible {
   font-family: var(--display);
   font-weight: 600;
   font-size: clamp(2rem, 6vw, 4.5rem);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
   line-height: 1;
   margin-bottom: 2rem;
 }
@@ -993,7 +996,7 @@ button:focus-visible {
   font-weight: 600;
   font-size: clamp(5rem, 22vw, 16rem);
   line-height: 0.9;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.015em;
 }
 .notfound p {
   color: var(--muted);
@@ -1028,8 +1031,9 @@ button:focus-visible {
   pointer-events: none;
   z-index: 2500;
   mix-blend-mode: difference;
+  opacity: 0;
   transition: width 0.25s var(--ease), height 0.25s var(--ease),
-    background 0.25s var(--ease), margin 0.25s var(--ease);
+    background 0.25s var(--ease), margin 0.25s var(--ease), opacity 0.25s var(--ease);
 }
 .cursor--big {
   width: 44px;
@@ -1660,7 +1664,7 @@ button:focus-visible {
   font-family: var(--display);
   font-size: clamp(2.8rem, 6.5vw, 5.4rem);
   line-height: 0.95;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
   font-weight: 500;
 }
 .home-opening__title em {
@@ -1796,7 +1800,7 @@ button:focus-visible {
 .home-how__title {
   font-family: var(--display);
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin-bottom: var(--space-7);
   text-align: center;
   max-width: 22ch;
@@ -2083,9 +2087,6 @@ button:focus-visible {
   .now-grid,
   .notes-types {
     grid-template-columns: 1fr;
-  }
-  .header-cta {
-    display: none;
   }
   .home-opening__grid {
     grid-template-columns: 1fr;

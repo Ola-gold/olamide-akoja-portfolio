@@ -10,7 +10,6 @@ const LINKS = [
   { href: "/fieldwork", label: "Fieldwork" },
   { href: "/lab", label: "Lab" },
   { href: "/now", label: "Now" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {

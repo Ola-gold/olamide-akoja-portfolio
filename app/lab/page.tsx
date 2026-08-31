@@ -37,7 +37,7 @@ export default function LabPage() {
           <MaskLines lines={["Things I'm", <>figuring out by making.</>]} />
         </h1>
         <p className="page-lead">
-          Projects don&apos;t have to be commercially successful. They don&apos;t
+          Projects don’t have to be commercially successful. They don’t
           even have to be finished. Each entry: what it is, why, built with,
           what happened, what I learned.
         </p>
@@ -69,11 +69,11 @@ export default function LabPage() {
           <h2>More experiments coming</h2>
           <p>
             Prototypes, tiny tools, product concepts, research experiments — added
-            as they&apos;re built. No fake “AI expert” framing; just curiosity +
+            as they’re built. No fake “AI expert” framing; just curiosity +
             initiative.
           </p>
           <Magnetic href="/now" className="btn btn--ghost">
-            See what I&apos;m up to →
+            See what I’m up to →
           </Magnetic>
         </Reveal>
       </div>

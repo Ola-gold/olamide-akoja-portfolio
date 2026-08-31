@@ -10,7 +10,7 @@ export default function ContactPage() {
           Contact
         </Reveal>
         <h1 className="page-hero__title">
-          <MaskLines lines={["Let&apos;s build", <>something structured.</>]} />
+          <MaskLines lines={["Let's build", <>something structured.</>]} />
         </h1>
         <p className="page-lead">
           Two reasons you might be here — pick the one that fits.
@@ -20,14 +20,14 @@ export default function ContactPage() {
       <Reveal as="section" className="section container">
         <div className="about__bio" style={{ textAlign: "center", maxWidth: "40rem", margin: "0 auto" }}>
           <p>
-            <strong>Hiring manager?</strong> I&apos;m open to product management
+            <strong>Hiring manager?</strong> I’m open to product management
             and UX research roles. Resume and LinkedIn are right here — no
             gatekeeping.
           </p>
           <p className="muted">
             <strong>Everyone else?</strong> Client, collaborator, or someone who
-            liked the Extras page — email me. I&apos;m specifically glad to hear
-            from you, not just the &ldquo;hire me&rdquo; pitch.
+            liked the Extras page — email me. I’m specifically glad to hear
+            from you, not just the “hire me” pitch.
           </p>
         </div>
 

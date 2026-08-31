@@ -10,14 +10,20 @@ export default function Cursor() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const el = ref.current;
     if (!el) return;
+    el.style.opacity = "0";
 
-    let x = window.innerWidth / 2;
-    let y = window.innerHeight / 2;
+    let x = -100;
+    let y = -100;
     let tx = x;
     let ty = y;
     let raf = 0;
+    let hasMoved = false;
 
     const move = (e: MouseEvent) => {
+      if (!hasMoved) {
+        hasMoved = true;
+        el.style.opacity = "1";
+      }
       tx = e.clientX;
       ty = e.clientY;
       const t = e.target as HTMLElement;

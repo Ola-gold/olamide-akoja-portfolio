@@ -18,7 +18,7 @@ export default function Home() {
             </Reveal>
             <Reveal as="div" className="home-opening__support">
               <p>
-                I&apos;m curious about problems — how they happen, how people
+                I’m curious about problems — how they happen, how people
                 experience them, and what might make them better.
               </p>
               <p>
@@ -55,7 +55,7 @@ export default function Home() {
                 Parallel Lab
               </a>
               , a studio I co-run, and learning to build with AI — not to
-              pretend I&apos;m an expert, but to figure it out by making things.
+              pretend I’m an expert, but to figure it out by making things.
             </p>
             <a href="/about" className="t-go">
               More about me →
@@ -160,7 +160,7 @@ export default function Home() {
           </a>
           <div className="lab-preview__item lab-preview__item--muted">
             <h4>Make Automations</h4>
-            <p>Tiny workflow experiments — what breaks, what scales, what&apos;s worth keeping.</p>
+            <p>Tiny workflow experiments — what breaks, what scales, what’s worth keeping.</p>
             <span className="case__role">Documenting</span>
           </div>
           <div className="lab-preview__item lab-preview__item--muted">
@@ -181,13 +181,13 @@ export default function Home() {
             <div className="eyebrow" style={{ marginBottom: "1.2rem" }}>
               Notes
             </div>
-            <h2 className="section-title">Things I&apos;m thinking about.</h2>
+            <h2 className="section-title">Things I’m thinking about.</h2>
           </div>
           <span className="idx">03 / NOTES</span>
         </div>
         <div className="notes-preview">
           <a href="/notes" className="notes-preview__item">
-            <h4>I don&apos;t think every problem needs more design.</h4>
+            <h4>I don’t think every problem needs more design.</h4>
             <span className="case__role">Note · Product</span>
           </a>
           <a href="/notes" className="notes-preview__item">
@@ -195,7 +195,7 @@ export default function Home() {
             <span className="case__role">Essay · Business</span>
           </a>
           <a href="/notes" className="notes-preview__item">
-            <h4>What I&apos;m learning from building with AI.</h4>
+            <h4>What I’m learning from building with AI.</h4>
             <span className="case__role">Learning · Lab</span>
           </a>
         </div>
@@ -227,7 +227,7 @@ export default function Home() {
             <div className="eyebrow" style={{ marginBottom: "1.2rem" }}>
               Now
             </div>
-            <h2 className="section-title">What I&apos;m up to.</h2>
+            <h2 className="section-title">What I’m up to.</h2>
           </div>
           <span className="idx">04 / NOW</span>
         </div>
@@ -250,7 +250,7 @@ export default function Home() {
           </div>
         </div>
         <a href="/now" className="t-go" style={{ marginTop: "1.5rem", display: "inline-block" }}>
-          See what I&apos;m up to →
+          See what I’m up to →
         </a>
       </Reveal>
 
