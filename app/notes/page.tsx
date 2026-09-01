@@ -10,12 +10,11 @@ export default function NotesPage() {
           Notes
         </Reveal>
         <h1 className="page-hero__title">
-          <MaskLines lines={["Things worth", <>saying.</>]} />
+          <MaskLines lines={["Unfiltered thoughts", <>on systems, product intuition, and culture.</>]} />
         </h1>
         <p className="page-lead">
-          Essays, short observations, and things I’ve learned while
-          building. Not a content factory — a record of what’s actually
-          interesting.
+          Essays, short observations, and things I’ve learned while building —
+          not a content factory, just things worth saying.
         </p>
       </section>
 

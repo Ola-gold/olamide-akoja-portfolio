@@ -11,18 +11,21 @@ const EXPERIMENTS = [
     meta: LAB_EXPERIMENT.meta,
     summary: LAB_EXPERIMENT.summary,
     href: LAB_EXPERIMENT.href,
+    why: "Why I built this: I wanted to eliminate 3 hours of repetitive client triage every Monday morning.",
   },
   {
     title: "Make Automations",
     meta: "Make.com · Tally · Sheets",
     summary:
       "Tiny workflow experiments — what breaks, what scales, what’s worth keeping. Documented as I go.",
+    why: "Why: to see which automations actually save time versus just demo well.",
   },
   {
     title: "Website Experiments",
     meta: "Next.js · Framer · Prototypes",
     summary:
       "This site itself is a lab — type, layout, motion, and content systems iterated in public.",
+    why: "Why: to treat the portfolio as a product, not a poster.",
   },
 ];
 
@@ -34,12 +37,11 @@ export default function LabPage() {
           Lab
         </Reveal>
         <h1 className="page-hero__title">
-          <MaskLines lines={["Things I'm", <>figuring out by making.</>]} />
+          <MaskLines lines={["Playground &", <>Prototypes: experiments in progress.</>]} />
         </h1>
         <p className="page-lead">
-          Projects don’t have to be commercially successful. They don’t
-          even have to be finished. Each entry: what it is, why, built with,
-          what happened, what I learned.
+          Projects don’t have to be commercially successful. They don’t even have
+          to be finished — Lab is where I learn by making.
         </p>
       </section>
 
@@ -52,6 +54,11 @@ export default function LabPage() {
               </div>
               <h2>{e.title}</h2>
               <p>{e.summary}</p>
+              {(e as any).why && (
+                <p className="muted" style={{ fontStyle: "italic", marginTop: "0.4rem" }}>
+                  {(e as any).why}
+                </p>
+              )}
               {e.href ? (
                 <Link href={e.href} className="t-go">
                   View case study →

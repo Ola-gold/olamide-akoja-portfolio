@@ -31,11 +31,17 @@ export default function NowPage() {
           </Reveal>
           <Reveal as="section" className="now-block">
             <h4>Reading</h4>
-            <p>Re-reading on systems and storytelling. Photography books for seeing, not just shooting.</p>
+            <p>
+              <em>The Practice of Everyday Life</em> — de Certeau. A paragraph on tactics vs. strategies has been sitting with me for weeks: how users make systems their own.
+            </p>
           </Reveal>
           <Reveal as="section" className="now-block">
-            <h4>Thinking about</h4>
-            <p>The difference between making something clear and making it simple. And how to show curiosity without performing it.</p>
+            <h4>Listening</h4>
+            <p>Lo-fi and Alt-J on repeat in the studio — plus SwitchOn with Adaora Lumina when I need to think bigger.</p>
+          </Reveal>
+          <Reveal as="section" className="now-block">
+            <h4>Obsessing over</h4>
+            <p>A tiny detail: the way Playbook’s pills use a hairline border + muted mono to make dense information feel calm. Trying to steal that calm.</p>
           </Reveal>
           <Reveal as="section" className="now-block">
             <h4>Outside work</h4>

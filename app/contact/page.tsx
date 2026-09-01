@@ -10,24 +10,31 @@ export default function ContactPage() {
           Contact
         </Reveal>
         <h1 className="page-hero__title">
-          <MaskLines lines={["Let's build", <>something structured.</>]} />
+          <MaskLines lines={["Let's make", <>something thoughtful together.</>]} />
         </h1>
         <p className="page-lead">
-          Two reasons you might be here — pick the one that fits.
+          Whether you’re hiring, collaborating, or just exploring — the next
+          step is a conversation.
         </p>
       </section>
 
       <Reveal as="section" className="section container">
         <div className="about__bio" style={{ textAlign: "center", maxWidth: "40rem", margin: "0 auto" }}>
           <p>
-            <strong>Hiring manager?</strong> I’m open to product management
-            and UX research roles. Resume and LinkedIn are right here — no
-            gatekeeping.
+            <strong>Looking for a collaborator or team member?</strong> If you’re
+            building products that value clarity, strong systems, and quiet
+            detail — let’s talk shop. Dive into my{" "}
+            <a href="https://drive.google.com/file/d/1dUYDI5hTnBki905gM6nHlCYcubDafH2N/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>{" "}
+            or start a conversation via{" "}
+            <a href="mailto:olamideibukunoluwa5@gmail.com">Email</a>.
           </p>
           <p className="muted">
-            <strong>Everyone else?</strong> Client, collaborator, or someone who
-            liked the Extras page — email me. I’m specifically glad to hear
-            from you, not just the “hire me” pitch.
+            <strong>Just exploring or want to talk design?</strong> Whether you
+            found a note you resonated with or just want to swap
+            recommendations on books, photography, or studio workflows — my
+            inbox is always open.
           </p>
         </div>
 

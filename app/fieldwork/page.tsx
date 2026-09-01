@@ -15,8 +15,8 @@ export default function FieldworkPage() {
           <MaskLines lines={["I photograph", <>people, places, moments.</>]} />
         </h1>
         <p className="page-lead">
-          People, places and moments that make me pay attention. Let the
-          photographs breathe — writing stays sparse.
+          Fieldwork is where I step away from screens to practice observation.
+          It’s how I train my eye for pattern, scale, and atmosphere.
         </p>
       </section>
 
